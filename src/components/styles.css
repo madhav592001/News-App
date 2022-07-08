@@ -1,0 +1,47 @@
+.alert-message {
+  font-size: 0.8rem !important;
+}
+
+.source-box {
+  margin: 1%;
+  padding: 1% 2%;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.484);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+
+.source-box:focus {
+  background-color: black;
+  border: 1px solid rgb(102, 51, 51);
+}
+
+.card .card-title {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .card-desc {
+  font-size: 0.6rem;
+}
+
+.offcanvas-title {
+  font-size: 1rem;
+}
+
+.offcanvas-desc {
+  font-size: 0.8rem;
+}
+
+.open-btn {
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 2% 4%;
+  border-radius: 5px;
+}
