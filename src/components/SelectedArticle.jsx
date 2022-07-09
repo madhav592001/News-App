@@ -25,7 +25,7 @@ const SelectedArticle = ({ show, setShow, selectedArtcile }) => {
         <img
           width='100%'
           height='30%'
-          alt='article-photo'
+          alt='article'
           src={selectedArtcile.urlToImage}
         />
 
