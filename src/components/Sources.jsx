@@ -42,13 +42,14 @@ const Sources = () => {
         </div>
       ) : (
         <>
-          {sources.map((s, idx) => (
-            <Source
-              source={s}
-              key={idx}
-              setSelectedSource={setSelectedSource}
-            />
-          ))}
+          {sources &&
+            sources.map((s, idx) => (
+              <Source
+                source={s}
+                key={idx}
+                setSelectedSource={setSelectedSource}
+              />
+            ))}
         </>
       )}
     </div>
