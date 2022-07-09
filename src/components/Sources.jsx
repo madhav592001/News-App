@@ -19,7 +19,7 @@ const Sources = () => {
   //todo -> GET articles on the basis of source selected
   React.useEffect(() => {
     dispatch(articlesFromSources(selectedSource));
-  }, [selectedSource]);
+  }, [selectedSource, dispatch]);
 
   return (
     <div className='px-2'>

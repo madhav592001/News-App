@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { Spinner, Alert, Row, Col } from 'react-bootstrap';
+import { Spinner, Row, Col } from 'react-bootstrap';
 import Article from './Article';
 import SelectedArticle from './SelectedArticle';
 

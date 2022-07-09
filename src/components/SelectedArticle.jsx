@@ -3,7 +3,7 @@ import { Offcanvas } from 'react-bootstrap';
 import './styles.css';
 
 const SelectedArticle = ({ show, setShow, selectedArtcile }) => {
-  console.log(selectedArtcile);
+  // console.log(selectedArtcile);
   return (
     <>
       <Offcanvas
@@ -22,7 +22,12 @@ const SelectedArticle = ({ show, setShow, selectedArtcile }) => {
           {selectedArtcile.title}
         </Offcanvas.Title>
 
-        <img width='100%' height='30%' src={selectedArtcile.urlToImage} />
+        <img
+          width='100%'
+          height='30%'
+          alt='article-photo'
+          src={selectedArtcile.urlToImage}
+        />
 
         <Offcanvas.Body className='offcanvas-desc'>
           {selectedArtcile.description}
