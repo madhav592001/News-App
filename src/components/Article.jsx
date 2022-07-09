@@ -30,7 +30,7 @@ const Article = ({ article, openSidebar }) => {
       return false;
     });
     setFound(isFound);
-  }, [adding]);
+  }, [adding, favourites, article]);
 
   // console.log(isFound);
 
