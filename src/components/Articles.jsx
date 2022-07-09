@@ -27,11 +27,15 @@ const Articles = () => {
     <div className='w-100'>
       {openFavourites ? (
         <Row>
-          {favourites.map((a, idx) => (
-            <Col sm={12} md={6} xl={3}>
-              <Article openSidebar={openSidebar} key={idx} article={a} />
-            </Col>
-          ))}
+          {favourites ? (
+            favourites.map((a, idx) => (
+              <Col sm={12} md={6} xl={3}>
+                <Article openSidebar={openSidebar} key={idx} article={a} />
+              </Col>
+            ))
+          ) : (
+            <p className='text-center my-3'>No Favourites In the list</p>
+          )}
         </Row>
       ) : (
         <>
@@ -42,11 +46,21 @@ const Articles = () => {
           ) : (
             <>
               <Row>
-                {articles.map((a, idx) => (
-                  <Col sm={12} md={6} xl={3}>
-                    <Article openSidebar={openSidebar} key={idx} article={a} />
-                  </Col>
-                ))}
+                {articles ? (
+                  articles.map((a, idx) => (
+                    <Col sm={12} md={6} xl={3}>
+                      <Article
+                        openSidebar={openSidebar}
+                        key={idx}
+                        article={a}
+                      />
+                    </Col>
+                  ))
+                ) : (
+                  <p className='text-center my-3'>
+                    No articles, Please select other source
+                  </p>
+                )}
               </Row>
             </>
           )}
