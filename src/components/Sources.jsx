@@ -14,7 +14,7 @@ const Sources = () => {
   //todo -> GET all the sources
   React.useEffect(() => {
     dispatch(getAllSources());
-  }, []);
+  }, [dispatch]);
 
   //todo -> GET articles on the basis of source selected
   React.useEffect(() => {
